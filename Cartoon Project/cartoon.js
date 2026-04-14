@@ -49,7 +49,7 @@ ctx.stroke();
 
 // door
 ctx.fillStyle = "black";
-ctx.fillRect(375, 350, 50, 50);
+ctx.fillRect(375, 300, 50, 100);
 
 // windows
 ctx.fillStyle = "yellow";
@@ -69,7 +69,7 @@ ctx.translate(50, 350);
 
 // color it
 ctx.strokeStyle = "white";
-ctx.lineWidth = 2;
+ctx.lineWidth = 4;
 
 for (let i = 0; i < 10; i++) {
     ctx.beginPath();
