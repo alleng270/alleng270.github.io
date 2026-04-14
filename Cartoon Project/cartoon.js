@@ -49,7 +49,7 @@ ctx.stroke();
 
 // door
 ctx.fillStyle = "black";
-ctx.fillRect(375, 300, 50, 100);
+ctx.fillRect(375, 350, 50, 50);
 
 // windows
 ctx.fillStyle = "yellow";
@@ -67,6 +67,7 @@ ctx.fillText("Night Night 😴", 100, 150);
 ctx.save();
 ctx.translate(50, 350);
 
+// color it
 ctx.strokeStyle = "white";
 ctx.lineWidth = 2;
 
@@ -79,9 +80,10 @@ for (let i = 0; i < 10; i++) {
     ctx.translate(20, 0);
 }
 
+// fencing details
 ctx.beginPath();
-ctx.moveTo(-15 * 12, -20);
-ctx.lineTo(0, -20);        
+ctx.moveTo(-20 * 10, -30);
+ctx.lineTo(-20, -30);        
 ctx.stroke();
 
 ctx.restore();
