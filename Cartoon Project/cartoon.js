@@ -75,5 +75,5 @@ ctx.restore();
 
 // add text
 ctx.fillStyle = "white";
-ctx.font = "18px Arial";
-ctx.fillText("Night Night 😴", 280, 450);
+ctx.font = "20px Arial";
+ctx.fillText("Night Night 😴", 180, 50);
