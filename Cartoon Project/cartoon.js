@@ -49,7 +49,7 @@ ctx.stroke();
 
 // door
 ctx.fillStyle = "black";
-ctx.fillRect(375, 295, 50, 100);
+ctx.fillRect(375, 200, 50, 100);
 
 // windows
 ctx.fillStyle = "yellow";
@@ -76,4 +76,4 @@ ctx.restore();
 // add text
 ctx.fillStyle = "white";
 ctx.font = "20px Arial";
-ctx.fillText("Night Night 😴", 100, 50);
+ctx.fillText("Night Night 😴", 100, 10);
