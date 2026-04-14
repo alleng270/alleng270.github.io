@@ -58,6 +58,11 @@ ctx.fillRect(440, 270, 40, 40);
 ctx.strokeRect(320, 270, 40, 40);
 ctx.strokeRect(440, 270, 40, 40);
 
+// add text
+ctx.fillStyle = "white";
+ctx.font = "20px Arial";
+ctx.fillText("Night Night 😴", 100, 150);
+
 // fence (use for loop)
 ctx.save();
 ctx.translate(50, 350);
@@ -74,9 +79,9 @@ for (let i = 0; i < 10; i++) {
     ctx.translate(20, 0);
 }
 
-ctx.restore();
+ctx.beginPath();
+ctx.moveTo(-15 * 12, -20);
+ctx.lineTo(0, -20);        
+ctx.stroke();
 
-// add text
-ctx.fillStyle = "white";
-ctx.font = "20px Arial";
-ctx.fillText("Night Night 😴", 100, 150);
+ctx.restore();
