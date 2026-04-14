@@ -62,6 +62,9 @@ ctx.strokeRect(440, 270, 40, 40);
 ctx.save();
 ctx.translate(50, 350);
 
+ctx.strokeStyle = "white";
+ctx.lineWidth = 2;
+
 for (let i = 0; i < 10; i++) {
     ctx.beginPath();
     ctx.moveTo(0, 0);
