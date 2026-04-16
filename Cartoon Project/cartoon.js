@@ -9,7 +9,7 @@ ctx.fillRect(0, 0, canvas.width, canvas.height);
 // moon
 ctx.beginPath();
 ctx.arc(700, 80, 40, 0, Math.PI * 2);
-ctx.fillStyle = "#f5f3ce";
+ctx.fillStyle = "#c9c010";
 ctx.fill();
 ctx.stroke();
 
@@ -60,30 +60,33 @@ ctx.strokeRect(440, 270, 40, 40);
 
 // add text
 ctx.fillStyle = "white";
-ctx.font = "20px Arial";
-ctx.fillText("Night Night 😴", 100, 150);
+ctx.font = "32px Arial";
+ctx.fillText("Good Night 😴", 80, 220);
 
-// fence (use for loop)
-ctx.save();
-ctx.translate(50, 350);
 
-// color it
-ctx.strokeStyle = "white";
-ctx.lineWidth = 4;
+function drawFence(x, y) {
+    ctx.save();
+    ctx.translate(x, y);
 
-for (let i = 0; i < 10; i++) {
+    ctx.strokeStyle = "white";
+    ctx.lineWidth = 9;
+
+    for (var i = 0; i < 10; i++) {
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.lineTo(0, -40);
+        ctx.stroke();
+
+        ctx.translate(20, 0);
+    }
+
+    // fencing details
     ctx.beginPath();
-    ctx.moveTo(0, 0);
-    ctx.lineTo(0, -40);
+    ctx.moveTo(-20 * 10, -30);
+    ctx.lineTo(-20, -30);
     ctx.stroke();
 
-    ctx.translate(20, 0);
+    ctx.restore();
 }
-
-// fencing details
-ctx.beginPath();
-ctx.moveTo(-20 * 10, -30);
-ctx.lineTo(-20, -30);        
-ctx.stroke();
-
-ctx.restore();
+drawFence(50, 350); // draw fence 1
+drawFence(560, 350); // draw fence 2
