@@ -9,7 +9,7 @@ ctx.fillRect(0, 0, canvas.width, canvas.height);
 // moon
 ctx.beginPath();
 ctx.arc(700, 80, 40, 0, Math.PI * 2);
-ctx.fillStyle = "#c9c010";
+ctx.fillStyle = "#7a7a79";
 ctx.fill();
 ctx.stroke();
 
