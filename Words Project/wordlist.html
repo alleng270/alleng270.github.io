@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Multimedia Dictionary</title>
+</head>
+<body>
+
+<h2>The Multimedia Dictionary</h2>
+
+<select id="wordMenu" onchange="updateSentence()">
+    <option value="">-- Select a Word --</option>
+    <option value="Dog" data-sentence="The dog says woof.">Dog</option>
+    <option value="Cat" data-sentence="The cat says meow.">Cat</option>
+    <option value="Bird" data-sentence="The bird says chirp.">Bird</option>
+    <option value="Snake" data-sentence="The snake says hiss.">Snake</option>
+    <option value="Car" data-sentence="The car goes vroom.">Car</option>
+</select>
+
+<button onclick="speakWord()">Speak Word</button>
+
+<br><br>
+
+<textarea id="sentenceBox" readonly></textarea>
+<button onclick="speakSentence()">Speak Sentence</button>
+
+<script src="wordlist.js"></script>
+
+</body>
+</html>
